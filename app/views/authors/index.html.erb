@@ -1,0 +1,13 @@
+<%@authors.each do |author|%>
+  <div id="<%=author.last_name.downcase%>" class="author-image">
+  </div>
+  <div class="author-info">
+    <h3 class="author-title">
+        <%=link_to author.show_name, author_posts_path(:last_name => author.last_name) %>
+    </h3>
+    <p class="author-bio">
+        <%= author.bio %>
+    </p>
+  </div>
+  <hr/>
+<% end %>
