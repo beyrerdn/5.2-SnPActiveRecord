@@ -2,10 +2,10 @@
   </div>
   <div class="author-info">
     <h3 class="author-title">
-        <%= Author.find("Brown").show_name %>
+        <%= Author.find_by_last_name("Brown").show_name %>
     </h3>
     <p class="author-bio">
-        <%= Author.find("Brown").bio %>
+        <%= Author.find_by_last_name("Brown").bio %>
     </p>
   </div>
   <p>Here Doc Brown describes his invention:</p>
