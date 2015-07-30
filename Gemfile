@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #For pagination
-gem 'will_paginate'
+gem 'kaminari'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
